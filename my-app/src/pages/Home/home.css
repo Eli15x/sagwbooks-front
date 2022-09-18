@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  background-color: white;
+  text-align: center;
+  font-family: 'KoHo';
+  color: #999999;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+  color:black;
+  font-size: 32px;
+  position: fixed;
+  top:4%;
+}
+
+img {
+  position: fixed;
+  height: 150px;
+  width: 150px;
+  left: 90%;
+}
+
+.bar-feed{
+    position: fixed;
+    height: 10%;
+    width: 100%;   
+    background: #FBCB22;
+
+}
+
+.bar-icon{
+    position: fixed;
+    height: 100%;
+    width: 100%;   
+}
+
+.bar-item-livros{
+  position: fixed;
+  left: 10%;
+
+}
+
+.bar-item-contato{
+  position: fixed;
+  left: 20%;
+
+}
+
+.bar-item-login{
+  position: fixed;
+  left: 75%;
+
+}

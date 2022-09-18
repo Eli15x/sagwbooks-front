@@ -1,0 +1,312 @@
+  
+body {
+    margin: 0;
+    background-color: white;
+    text-align: center;
+    font-family: 'KoHo';
+    color: #999999;
+}
+
+  a {
+    text-decoration: none;
+    font-style: normal;
+    color:black;
+    font-size: 32px;
+    position: fixed;
+    top:4%;
+  }
+
+  a:hover {
+    color: #f1f1f1;
+  }
+  
+  
+  img {
+    position: fixed;
+    height: 150px;
+    width: 150px;
+    left: 90%;
+  }
+  
+  .bar-feed{
+      position: fixed;
+      height: 10%;
+      width: 100%;   
+  
+  }
+  
+  .bar-icon{
+      position: fixed;
+      height: 100%;
+      width: 100%;   
+  }
+
+  .bar-items{
+    width:100%;
+    height:100%;
+    background: #FBCB22;
+  }
+  
+  .bar-item-livros{
+    position: fixed;
+    left: 10%;
+  
+  }
+  
+  .bar-item-contato{
+    position: fixed;
+    left: 20%;
+  
+  }
+  
+  .bar-item-login{
+    position: fixed;
+    left: 75%;
+    display:flex;
+  
+  }
+  
+  .closebtn{
+    display:none;
+  }
+
+  .openbtn{
+    display:none;
+
+  }
+
+
+  @media only screen and (min-width: 850px) and (max-width: 1440px) {
+     
+    a {
+      text-decoration: none;
+      font-style: normal;
+      color:black;
+      font-size: 32px;
+      position: fixed;
+      top:4%;
+    }
+    
+    img {
+      position: fixed;
+      height: 150px;
+      width: 150px;
+      left: 83%;
+    }
+    
+    .bar-feed{
+        position: fixed;
+        height: 10%;
+        width: 100%;   
+    
+    }
+    
+    .bar-icon{
+        position: fixed;
+        height: 100%;
+        width: 100%;   
+    }
+
+    .bar-items{
+      width:100%;
+      height:100%;
+      background: #FBCB22;
+    }  
+    
+    .bar-item-livros{
+      position: fixed;
+      left: 5%;
+    
+    }
+    
+    .bar-item-contato{
+      position: fixed;
+      left: 20%;
+    
+    }
+    
+    .bar-item-login{
+      position: fixed;
+      left: 60%;
+      display:flex;
+    
+    }
+
+    .closebtn{
+      display:none;
+    }
+  
+    .openbtn{
+      display:none;
+  
+    }
+  }
+
+@media only screen and (min-width: 700px) and (max-width: 850px) {
+     
+    a {
+      text-decoration: none;
+      font-style: normal;
+      color:black;
+      font-size: 32px;
+      position: fixed;
+      top:4%;
+    }
+    
+    img {
+      position: fixed;
+      height: 150px;
+      width: 150px;
+      left: 80%;
+    }
+    
+    .bar-feed{
+        position: fixed;
+        height: 10%;
+        width: 100%; 
+    
+    }
+    
+    .bar-icon{
+        position: fixed;
+        height: 100%;
+        width: 100%;   
+    }
+
+    .bar-items{
+      width:100%;
+      height:100%;
+      background: #FBCB22;
+    }
+    
+    
+    .bar-item-livros{
+      position: fixed;
+      left: 5%;
+    
+    }
+    
+    .bar-item-contato{
+      position: fixed;
+      left: 20%;
+    
+    }
+    
+    .bar-item-login{
+      position: fixed;
+      left: 52%;
+      display:flex;
+    
+    }
+
+    .closebtn{
+      display:none;
+    }
+  
+    .openbtn{
+      display:none;
+  
+    }
+  }
+
+  @media only screen and (min-width: 0px) and (max-width: 700px) {
+     
+    a {
+      text-decoration: none;
+      font-style: normal;
+      color:black;
+      font-size: 25px;
+      position: fixed;
+      display: block;
+      transition: 0.3s;
+      top:4%;
+    }
+    
+    img {
+      position: fixed;
+      height: 150px;
+      width: 150px;
+      left: 2%;
+    }
+    
+    .bar-feed{
+        width: 100%; /* 0 width - change this with JavaScript */
+        height: 100%;
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0;
+        left: 0;
+        background-color:#ffff ;
+    
+    }
+
+    .bar-items{
+      width: 28%; /* 0 width - change this with JavaScript */
+      height: 28%;
+      position:fixed; 
+      top:20%;
+    }
+
+    .closebtn {
+        display:block;
+        position: fixed;
+        top: 20%;
+        font-size: 30px;
+        left: 0%;
+        cursor: pointer;
+        background-color: #FBCB22;
+        color: black;
+        padding: 10px 15px;
+        border: none;
+    }
+
+    .openbtn {
+        display:block;
+        position:fixed;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #FBCB22;
+        color: black;
+        padding: 10px 15px;
+        border: none;
+        top:20%;
+        left:2%;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+    
+    #main {
+        transition: margin-left .5s; /* If you want a transition effect */
+        padding: 20px;
+    }
+    
+    .bar-icon{
+        position: fixed;
+        height: 100%;
+        width: 100%;   
+    }
+    
+    .bar-item-livros{
+      position: fixed;
+      left: 1%;
+      top:26%;
+    
+    }
+    
+    .bar-item-contato{
+      position: fixed;
+      left: 1%;
+      top:32%;
+    
+    }
+    
+    .bar-item-login{
+      position: fixed;
+      left: 1%;
+      display:flex;
+      top:38%;
+    
+    }
+  }
