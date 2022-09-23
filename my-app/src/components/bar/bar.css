@@ -1,4 +1,82 @@
-  
+body {
+  margin: 0;
+  background-color: white;
+  text-align: center;
+  font-family: 'KoHo';
+  color: #999999;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+  color:black;
+  font-size: 32px;
+  position: fixed;
+  top:4%;
+}
+
+a:hover {
+  color: #f1f1f1;
+}
+
+.bar-feed{
+    position: fixed;
+    height: 10%;
+    width: 100%;   
+
+}
+
+.bar-icon{
+    position: fixed;
+    height: 100%;
+    width: 100%;   
+}
+
+.bar-icon img {
+  position: fixed;
+  height: 150px;
+  width: 150px;
+  left: 90%;
+}
+
+.bar-items{
+  width:100%;
+  height:100%;
+  background: #FBCB22;
+}
+
+.bar-item-livros{
+  position: fixed;
+  left: 10%;
+
+}
+
+.bar-item-contato{
+  position: fixed;
+  left: 20%;
+
+}
+
+.bar-item-login{
+  position: fixed;
+  left: 75%;
+  display:flex;
+
+}
+
+.closebtn{
+  display:none;
+}
+
+.openbtn{
+  display:none;
+
+}
+.icon-login{
+  display:none;
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1420px) { 
 body {
     margin: 0;
     background-color: white;
@@ -11,21 +89,13 @@ body {
     text-decoration: none;
     font-style: normal;
     color:black;
-    font-size: 32px;
+    font-size: 28px;
     position: fixed;
     top:4%;
   }
 
   a:hover {
     color: #f1f1f1;
-  }
-  
-  
-  img {
-    position: fixed;
-    height: 150px;
-    width: 150px;
-    left: 90%;
   }
   
   .bar-feed{
@@ -39,6 +109,13 @@ body {
       position: fixed;
       height: 100%;
       width: 100%;   
+  }
+
+  .bar-icon img {
+    position: fixed;
+    height: 150px;
+    width: 150px;
+    left: 85%;
   }
 
   .bar-items{
@@ -61,7 +138,7 @@ body {
   
   .bar-item-login{
     position: fixed;
-    left: 75%;
+    left: 72%;
     display:flex;
   
   }
@@ -75,25 +152,20 @@ body {
 
   }
 
+}
 
-  @media only screen and (min-width: 850px) and (max-width: 1440px) {
+
+  @media only screen and (min-width: 850px) and (max-width: 1420px) {
      
     a {
       text-decoration: none;
       font-style: normal;
       color:black;
-      font-size: 32px;
+      font-size: 24px;
       position: fixed;
       top:4%;
     }
-    
-    img {
-      position: fixed;
-      height: 150px;
-      width: 150px;
-      left: 83%;
-    }
-    
+     
     .bar-feed{
         position: fixed;
         height: 10%;
@@ -105,6 +177,13 @@ body {
         position: fixed;
         height: 100%;
         width: 100%;   
+    }
+
+    .bar-icon img {
+      position: fixed;
+      height: 150px;
+      width: 150px;
+      left: 80%;
     }
 
     .bar-items{
@@ -127,7 +206,7 @@ body {
     
     .bar-item-login{
       position: fixed;
-      left: 60%;
+      left: 63%;
       display:flex;
     
     }
@@ -148,16 +227,9 @@ body {
       text-decoration: none;
       font-style: normal;
       color:black;
-      font-size: 32px;
+      font-size: 24px;
       position: fixed;
       top:4%;
-    }
-    
-    img {
-      position: fixed;
-      height: 150px;
-      width: 150px;
-      left: 80%;
     }
     
     .bar-feed{
@@ -171,6 +243,13 @@ body {
         position: fixed;
         height: 100%;
         width: 100%;   
+    }
+
+    .bar-icon img {
+      position: fixed;
+      height: 150px;
+      width: 150px;
+      left: 77%;
     }
 
     .bar-items{
@@ -194,7 +273,7 @@ body {
     
     .bar-item-login{
       position: fixed;
-      left: 52%;
+      left: 55%;
       display:flex;
     
     }
@@ -209,54 +288,76 @@ body {
     }
   }
 
-  @media only screen and (min-width: 0px) and (max-width: 700px) {
+  @media only screen and (min-width: 600px) and (max-width: 700px) {
      
     a {
       text-decoration: none;
       font-style: normal;
       color:black;
-      font-size: 25px;
+      font-size: 18px;
       position: fixed;
       display: block;
       transition: 0.3s;
       top:4%;
     }
     
-    img {
-      position: fixed;
-      height: 150px;
-      width: 150px;
-      left: 2%;
-    }
-    
     .bar-feed{
-        width: 100%; /* 0 width - change this with JavaScript */
-        height: 100%;
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Stay on top */
-        top: 0;
-        left: 0;
-        background-color:#ffff ;
-    
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Stay on top */
+      height: 10%;
+      width: 100%;
+      z-index: 1; /* Stay on top */
+      background-color:#FBCB22;  
     }
 
-    .bar-items{
-      width: 28%; /* 0 width - change this with JavaScript */
-      height: 28%;
-      position:fixed; 
-      top:20%;
-    }
+
+  .bar-icon{
+      position: fixed;
+      height: 100%;
+      width: 100%;   
+  }
+
+  .bar-icon img {
+    position: fixed;
+    height: 10.5%;
+    width: 14.5%;
+    left: 42.5%;
+  }
+  
+
+  .bar-items{
+    width: 25%; /* 0 width - change this with JavaScript */
+    height: 20%;
+    position:fixed; 
+    top:10%;
+    font-size: 14px;
+  }
+
+  .icon-login{
+    display:block;
+    position: fixed;
+    width:100%;
+    height:10%;
+    top:0%;
+    font-size: 30px;
+    left: 90%;
+  }
+
+  .icon-login img{
+    width: 50%;
+    height: 50%;
+  }
 
     .closebtn {
         display:block;
         position: fixed;
-        top: 20%;
+        top:1%;
         font-size: 30px;
         left: 0%;
         cursor: pointer;
         background-color: #FBCB22;
         color: black;
-        padding: 10px 15px;
+        padding: 4.2% 4.2%;
         border: none;
     }
 
@@ -267,38 +368,37 @@ body {
         cursor: pointer;
         background-color: #FBCB22;
         color: black;
-        padding: 10px 15px;
+        padding: 4.2% 4.2%;
         border: none;
-        top:20%;
-        left:2%;
+        top:1%;
+        left:0%;
     }
 
     .openbtn:hover {
-        background-color: #444;
+      color: #ffff;
+    }
+
+    .closebtn:hover {
+      color: #ffff;
     }
     
     #main {
+      width: 100%;
         transition: margin-left .5s; /* If you want a transition effect */
-        padding: 20px;
+
     }
-    
-    .bar-icon{
-        position: fixed;
-        height: 100%;
-        width: 100%;   
-    }
-    
+
     .bar-item-livros{
       position: fixed;
       left: 1%;
-      top:26%;
+      top:12%;
     
     }
     
     .bar-item-contato{
       position: fixed;
       left: 1%;
-      top:32%;
+      top:17%;
     
     }
     
@@ -306,7 +406,127 @@ body {
       position: fixed;
       left: 1%;
       display:flex;
-      top:38%;
+      top:22%;
+    
+    }
+  }
+
+  @media only screen and (min-width: 0px) and (max-width: 600px) {
+     
+    a {
+      text-decoration: none;
+      font-style: normal;
+      color:black;
+      font-size: 18px;
+      position: fixed;
+      display: block;
+      transition: 0.3s;
+      top:4%;
+    }
+    
+    .bar-feed{
+      position: fixed; /* Stay in place */
+      height: 10%;
+      width: 100%;
+      z-index: 1; /* Stay on top */
+      background-color:#FBCB22;  
+    }
+
+
+  .bar-icon{
+      position: fixed;
+      height: 100%;
+      width: 100%;   
+  }
+
+  .bar-icon img {
+    position: fixed;
+    height: 10%;
+    width: 16%;
+    left: 42.5%;
+  }
+  
+
+  .bar-items{
+    width: 25%; /* 0 width - change this with JavaScript */
+    height: 20%;
+    position:fixed; 
+    top:10%;
+    font-size: 14px;
+  }
+
+  .icon-login{
+    display:block;
+    position: fixed;
+    top:0%;
+    font-size: 30px;
+    left: 90%;
+  }
+
+  .icon-login img{
+    width: 60%;
+    height: 60%;
+  }
+
+  .closebtn {
+      display:block;
+      position: fixed;
+      top:1%;
+      font-size: 30px;
+      left: 0%;
+      cursor: pointer;
+      background-color: #FBCB22;
+      color: black;
+      padding: 5% 5%;
+      border: none;
+    }
+
+    .openbtn {
+        display:block;
+        position:fixed;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #FBCB22;
+        color: black;
+        padding: 5% 5%;
+        border: none;
+        top:1%;
+        left:0%;
+    }
+
+    .openbtn:hover {
+      color: #ffff;
+    }
+
+    .closebtn:hover {
+      color: #ffff;
+    }
+    
+    #main {
+      position:absolute;
+      width: 100%;
+        transition: margin-left .5s; /* If you want a transition effect */
+    }
+
+    .bar-item-livros{
+      position: fixed;
+      left: 1%;
+      top:12%;
+    
+    }
+    
+    .bar-item-contato{
+      position: fixed;
+      left: 1%;
+      top:17%;
+    
+    }
+    
+    .bar-item-login{
+      position: fixed;
+      left: 1%;
+      display:flex;
+      top:22%;
     
     }
   }

@@ -1,9 +1,10 @@
 import './bar.css';
-import icon from '../../img/sagwa-books.png'
+import icon from '../../img/sagwa-books.png';
+import loginIcon from '../../img/login-icon.png';
 import React , { useEffect, useState } from "react";
 
 
-const Feed = () => {
+const Bar = () => {
 
 const [open,setOpen] = useState(true)
 
@@ -36,6 +37,9 @@ useEffect(() => {
         <div id="main">
             <button className="openbtn" onClick={()=> bar(true)}> + </button>
         </div>
+        <div className="icon-login">
+            <a className="login" href="/teste"> <img src={loginIcon}></img></a> 
+        </div>
         </div>
     </>
 
@@ -43,4 +47,4 @@ useEffect(() => {
 
 }
 
-export default Feed;                         
+export default Bar;                         
