@@ -1,22 +1,867 @@
-.cards{
-    position:absolute;
-    top: 90%;
-    width: 100%; 
-    height: 70%;
-    padding-top: 12%;
-    align-items:center;
+.line-one{
+    position: absolute;
+    top: 3%;
+    left: 20%;
+    background: black;
+    width: 20%;
+    height: 0.10%;
+}
+
+.line-two{
+    position: absolute;
+    top: 3%;
+    left: 60%;
+    background: black;
+    width: 20%;
+    height: 0.10%;
+}
+
+.information-writters{
+    position: absolute;
+    top:92%;
+    width:100%;
+    height: 100%;
+    color: black;
+    font-size: 35px;
 
 }
 
+.cards{
+    position:relative;
+    width: 1650px;
+    height:1000px;
+    padding-top: 2%;
+    left:0%;
+    align-items: center;
+    
+
+}
+
+.imgwriter{
+    height: 100%;
+    width:100%;
+
+}
+
+.image-black{
+    filter:alpha(opacity=50); opacity:0.5;
+    background-color: black;
+    position:absolute;
+    top:75%;
+    height: 25%;
+    width: 100%;
+}
 .card-writer{
     position:relative;
     width: 20%;
-    height: 50%;
-    background-color: black;
+    height: 40%;
     display:inline-block;
     margin: 1%;
 }
 
 .info-writter{
-    filter: brightness(50%);
+    position:absolute;
+    top: 75%;
+    width: 100%;
+    height:25%;
+    color:#ffff;
 }
+
+.name-writter{
+    position:absolute;
+    font-size: 1.8vw;     
+    left:10%;
+    top:18%;
+
+}
+
+.information-writter {
+    position:absolute;
+    font-size: 1.25vw;    
+    left:10%;
+    top:55%;
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+
+    .line-one{
+        position: absolute;
+        top: 3%;
+        left: 15%;
+        background: black;
+        width: 20%;
+        height: 0.10%;
+    }
+    
+    .line-two{
+        position: absolute;
+        top: 3%;
+        left: 65%;
+        background: black;
+        width: 20%;
+        height: 0.10%;
+    }
+    
+    .information-writters{
+        position: absolute;
+        top:85%;
+        width:100%;
+        height: 100%;
+        color: black;
+        font-size: 35px;
+    
+    }
+    
+    .cards{
+        position:relative;
+        width: 1450px;
+        height:1000px;
+        padding-top: 2%;
+        left:0%;
+        align-items: center;
+    }
+    
+    .imgwriter{
+        height: 100%;
+        width:100%;
+    
+    }
+    
+    .image-black{
+        filter:alpha(opacity=50); opacity:0.5;
+        background-color: black;
+        position:absolute;
+        top:75%;
+        height: 25%;
+        width: 100%;
+    }
+    .card-writer{
+        position:relative;
+        width: 30%;
+        height: 45%;
+        display:inline-block;
+        margin: 1%;
+    }
+    
+    .info-writter{
+        position:absolute;
+        top: 75%;
+        width: 100%;
+        height:25%;
+        color:#ffff;
+    }
+    
+    .name-writter{
+        position:absolute;
+        font-size: 2.5vw;     
+        left:10%;
+        top:15%;
+    
+    }
+    
+    .information-writter {
+        position:absolute;
+        font-size: 2vw;    
+        left:10%;
+        top:55%;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+
+    .line-one{
+        position: absolute;
+        top: 3%;
+        left: 15%;
+        background: black;
+        width: 20%;
+        height: 0.10%;
+    }
+    
+    .line-two{
+        position: absolute;
+        top: 3%;
+        left: 65%;
+        background: black;
+        width: 20%;
+        height: 0.10%;
+    }
+    
+    .information-writters{
+        position: absolute;
+        top:78%;
+        width:100%;
+        height: 100%;
+        color: black;
+        font-size: 35px;
+    
+    }
+    
+    .cards{
+        position:relative;
+        width: 100%; 
+        height: 100%;
+        padding-top: 2%;
+        left:0%;
+        align-items: center;
+    }
+    
+    .imgwriter{
+        height: 100%;
+        width:100%;
+    
+    }
+    
+    .image-black{
+        filter:alpha(opacity=50); opacity:0.5;
+        background-color: black;
+        position:absolute;
+        top:75%;
+        height: 25%;
+        width: 100%;
+    }
+    .card-writer{
+        position:relative;
+        width: 400px;
+        height:400px;
+        display:inline-block;
+        margin: 1%;
+    }
+    
+    .info-writter{
+        position:absolute;
+        top: 75%;
+        width: 100%;
+        height:25%;
+        color:#ffff;
+    }
+    
+    .name-writter{
+        position:absolute;
+        font-size: 2.5vw;     
+        left:10%;
+        top:15%;
+    
+    }
+    
+    .information-writter {
+        position:absolute;
+        font-size: 1.75vw;    
+        left:10%;
+        top:55%;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+
+    .line-one{
+        position: absolute;
+        top: 3%;
+        left: 15%;
+        background: black;
+        width: 20%;
+        height: 0.10%;
+    }
+    
+    .line-two{
+        position: absolute;
+        top: 3%;
+        left: 65%;
+        background: black;
+        width: 20%;
+        height: 0.10%;
+    }
+    
+    .information-writters{
+        position: absolute;
+        top: 70%;
+        width:100%;
+        height: 100%;
+        color: black;
+        font-size: 35px;
+    
+    }
+    
+    .cards{
+        position:relative;
+        width: 100%; 
+        height: 100%;
+        padding-top: 2%;
+        left:0%;
+        align-items: center;
+    }
+    
+    .imgwriter{
+        height: 100%;
+        width:100%;
+    
+    }
+    
+    .image-black{
+        filter:alpha(opacity=50); opacity:0.5;
+        background-color: black;
+        position:absolute;
+        top:75%;
+        height: 25%;
+        width: 100%;
+    }
+    .card-writer{
+        position:relative;
+        width: 400px;
+        height:400px;
+        display:inline-block;
+        margin: 1%;
+    }
+    
+    .info-writter{
+        position:absolute;
+        top: 75%;
+        width: 100%;
+        height:25%;
+        color:#ffff;
+    }
+    
+    .name-writter{
+        position:absolute;
+        font-size: 2.6vw;     
+        left:10%;
+        top:18%;
+    
+    }
+    
+    .information-writter {
+        position:absolute;
+        font-size: 1.8vw;    
+        left:10%;
+        top:55%;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1000px) {
+
+    .line-one{
+        position: absolute;
+        top: 3%;
+        left: 15%;
+        background: black;
+        width: 20%;
+        height: 0.10%;
+    }
+    
+    .line-two{
+        position: absolute;
+        top: 3%;
+        left: 65%;
+        background: black;
+        width: 20%;
+        height: 0.10%;
+    }
+    
+    .information-writters{
+        position: absolute;
+        top:60%;
+        width:100%;
+        height: 100%;
+        color: black;
+        font-size: 35px;
+    
+    }
+    .cards{
+        position:relative;
+        width: 100%; 
+        height: 100%;
+        padding-top: 2%;
+        left:0%;
+        align-items: center;
+        
+    
+    }
+    
+    .imgwriter{
+        height: 100%;
+        width:100%;
+    
+    }
+    
+    .image-black{
+        filter:alpha(opacity=50); opacity:0.5;
+        background-color: black;
+        position:absolute;
+        top:75%;
+        height: 25%;
+        width: 100%;
+    }
+    .card-writer{
+        position:relative;
+        width: 300px;
+        height:300px;
+        display:inline-block;
+        margin: 1%;
+    }
+    
+    .info-writter{
+        position:absolute;
+        top: 75%;
+        width: 100%;
+        height:25%;
+        color:#ffff;
+    }
+    
+    .name-writter{
+        position:absolute;
+        font-size: 2.5vw;     
+        left:10%;
+        top:15%;
+    
+    }
+    
+    .information-writter {
+        position:absolute;
+        font-size: 2.0vw;    
+        left:10%;
+        top:55%;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 900px) {
+
+    .line-one{
+        position: absolute;
+        top: 2%;
+        left: 15%;
+        background: black;
+        width: 20%;
+        height: 0.05%;
+    }
+    
+    .line-two{
+        position: absolute;
+        top: 2%;
+        left: 65%;
+        background: black;
+        width: 20%;
+        height: 0.05%;
+    }
+    
+    .information-writters{
+        position: absolute;
+        top:55%;
+        width:100%;
+        height: 100%;
+        color: black;
+        font-size: 35px;
+    
+    }
+    
+    .cards{
+        position:relative;
+        width: 100%; 
+        height: 100%;
+        padding-top: 2%;
+        left:0%;
+        align-items: center;
+        
+    
+    }
+    
+    .imgwriter{
+        height: 100%;
+        width:100%;
+    
+    }
+    
+    .image-black{
+        filter:alpha(opacity=50); opacity:0.5;
+        background-color: black;
+        position:absolute;
+        top:75%;
+        height: 25%;
+        width: 100%;
+    }
+    .card-writer{
+        position:relative;
+        width: 250px;
+        height:250px;
+        display:inline-block;
+        margin: 1%;
+    }
+    
+    .info-writter{
+        position:absolute;
+        top: 75%;
+        width: 100%;
+        height:25%;
+        color:#ffff;
+    }
+    
+    .name-writter{
+        position:absolute;
+        font-size: 2.8vw;     
+        left:10%;
+        top:15%;
+    
+    }
+    .information-writter {
+        position:absolute;
+        font-size: 2.1vw;   
+        left:10%;
+        top:54%;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 800px) {
+
+    .line-one{
+        position: absolute;
+        top: 2%;
+        left: 10%;
+        background: black;
+        width: 20%;
+        height: 0.05%;
+    }
+    
+    .line-two{
+        position: absolute;
+        top: 2%;
+        left: 72%;
+        background: black;
+        width: 20%;
+        height: 0.05%;
+    }
+    
+    .information-writters{
+        position: absolute;
+        top:50%;
+        width:100%;
+        height: 100%;
+        color: black;
+        font-size: 35px;
+    
+    }
+    
+    .cards{
+        position:relative;
+        width: 100%; 
+        height: 100%;
+        padding-top: 2%;
+        left:0%;
+        align-items: center;
+        
+    
+    }
+    
+    .imgwriter{
+        height: 100%;
+        width:100%;
+    
+    }
+    
+    .image-black{
+        filter:alpha(opacity=50); opacity:0.5;
+        background-color: black;
+        position:absolute;
+        top:75%;
+        height: 25%;
+        width: 100%;
+    }
+    .card-writer{
+        position:relative;
+        width: 225px;
+        height:225px;
+        display:inline-block;
+        margin: 1%;
+    }
+    
+    .info-writter{
+        position:absolute;
+        top: 75%;
+        width: 100%;
+        height:25%;
+        color:#ffff;
+    }
+    
+    .name-writter{
+        position:absolute;
+        font-size: 2.8vw;     
+        left:10%;
+        top:13%;
+    
+    }
+    
+    .information-writter {
+        position:absolute;
+        font-size: 2vw;    
+        left:10%;
+        top:55%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 700px) {
+
+    .line-one{
+        position: absolute;
+        top: 2%;
+        left: 10%;
+        background: black;
+        width: 20%;
+        height: 0.05%;
+    }
+    
+    .line-two{
+        position: absolute;
+        top: 2%;
+        left: 72%;
+        background: black;
+        width: 20%;
+        height: 0.05%;
+    }
+    
+    .information-writters{
+        position: absolute;
+        top:46%;
+        width:100%;
+        height: 100%;
+        color: black;
+        font-size: 4.5vw; 
+        background-color: transparent;
+    
+    }
+    
+    .cards{
+        position:relative;
+        width: 100%; 
+        height: 100%;
+        padding-top: 2%;
+        left:0%;
+        align-items: center;
+        
+    
+    }
+    
+    .imgwriter{
+        height: 100%;
+        width:100%;
+    
+    }
+    
+    .image-black{
+        filter:alpha(opacity=50); opacity:0.5;
+        background-color: black;
+        position:absolute;
+        top:75%;
+        height: 25%;
+        width: 100%;
+    }
+    .card-writer{
+        position:relative;
+        width: 200px;
+        height:200px;
+        display:inline-block;
+        margin: 1%;
+    }
+    
+    .info-writter{
+        position:absolute;
+        top: 75%;
+        width: 100%;
+        height:25%;
+        color:#ffff;
+    }
+    
+    .name-writter{
+        position:absolute;
+        font-size: 3.3vw;     
+        left:10%;
+        top:12%;
+    
+    }
+    
+    .information-writter {
+        position:absolute;
+        font-size: 2.3vw;   
+        left:10%;
+        top:55%;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+
+    .line-one{
+        position: absolute;
+        top: 2%;
+        left: 10%;
+        background: black;
+        width: 20%;
+        height: 0.05%;
+    }
+    
+    .line-two{
+        position: absolute;
+        top: 2%;
+        left: 72%;
+        background: black;
+        width: 20%;
+        height: 0.05%;
+    }
+    
+    .information-writters{
+        position: absolute;
+        top:41%;
+        width:100%;
+        height: 100%;
+        color: black;
+        font-size: 4.5vw; 
+        background-color: transparent;
+    
+    }
+    
+    .cards{
+        position:relative;
+        width: 100%; 
+        height: 100%;
+        padding-top: 2%;
+        left:0%;
+        align-items: center;
+        
+    
+    }
+    
+    .imgwriter{
+        height: 100%;
+        width:100%;
+    
+    }
+    
+    .image-black{
+        filter:alpha(opacity=50); opacity:0.5;
+        background-color: black;
+        position:absolute;
+        top:75%;
+        height: 25%;
+        width: 100%;
+        display:none;
+    }
+    .card-writer{
+        position:relative;
+        width: 150px;
+        height:150px;
+        display:inline-block;
+        margin: 1.5%;
+    }
+    
+    .info-writter{
+        position:absolute;
+        top: 75%;
+        width: 100%;
+        height:25%;
+        color:#ffff;
+        display:none;
+    }
+    
+    .name-writter{
+        position:absolute;
+        font-size: 3.8vw;     
+        left:10%;
+        top:15%;
+    
+    }
+    
+    .information-writter {
+        position:absolute;
+        font-size: 2.8vw;   
+        left:10%;
+        top:54%;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+
+    .line-one{
+        position: absolute;
+        top: 2%;
+        left: 10%;
+        background: black;
+        width: 20%;
+        height: 0.05%;
+    }
+    
+    .line-two{
+        position: absolute;
+        top: 2%;
+        left: 72%;
+        background: black;
+        width: 20%;
+        height: 0.05%;
+    }
+    
+    .information-writters{
+        position: absolute;
+        top:36%;
+        width:100%;
+        height: 100%;
+        color: black;
+        font-size: 4.5vw; 
+        background-color: transparent;
+    
+    }
+    
+    .cards{
+        position:relative;
+        width: 100%; 
+        height: 100%;
+        padding-top: 2%;
+        left:0%;
+        align-items: center;
+        
+    
+    }
+    
+    .imgwriter{
+        height: 100%;
+        width:100%;
+    
+    }
+    
+    .card-writer{
+        position:relative;
+        width: 125px;
+        height:125px;
+        display:inline-block;
+        margin: 1.5%;
+    }
+    
+    .image-black{
+        filter:alpha(opacity=50); opacity:0.5;
+        background-color: black;
+        position:absolute;
+        top:75%;
+        height: 25%;
+        width: 100%;
+        display:none;
+    }
+
+    .info-writter{
+        position:absolute;
+        top: 75%;
+        width: 100%;
+        height:25%;
+        color:#ffff;
+        display:none;
+    }
+    
+    .name-writter{
+        position:absolute;
+        font-size: 4vw;     
+        left:10%;
+        top:10%;
+    
+    }
+    
+    .information-writter {
+        position:absolute;
+        font-size: 3vw;   
+        left:10%;
+        top:50%;
+    }
+}
+

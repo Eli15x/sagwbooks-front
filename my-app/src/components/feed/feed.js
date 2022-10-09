@@ -25,7 +25,7 @@ const settings = {
 	slidesToScroll: 1,
 	lazyLoad: true,
 	autoplay: true,
-  autoplaySpeed: 4000
+  	autoplaySpeed: 4000,
 
 };
 
@@ -34,7 +34,7 @@ return (
 	<div className="imgslider">
 		<Slider {...settings}>
 		{images.map((item) => (
-		<div classname="slider-images" style={{ width: 100 }}>
+		<div classname="slider-images">
 			<img src={item.src} alt={item.alt} />
 		</div>
 		))}

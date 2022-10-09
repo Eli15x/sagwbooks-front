@@ -294,7 +294,7 @@ body {
       text-decoration: none;
       font-style: normal;
       color:black;
-      font-size: 18px;
+      font-size: 22px;
       position: fixed;
       display: block;
       transition: 0.3s;
@@ -314,13 +314,14 @@ body {
   .bar-icon{
       position: fixed;
       height: 100%;
-      width: 100%;   
+      width: 100%;
+      top: 1%; 
   }
 
   .bar-icon img {
     position: fixed;
-    height: 10.5%;
-    width: 14.5%;
+    height: 100px;
+    width: 100px;
     left: 42.5%;
   }
   
@@ -340,12 +341,12 @@ body {
     height:10%;
     top:0%;
     font-size: 30px;
-    left: 90%;
+    left: 80%;
   }
 
   .icon-login img{
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    height: 30%;
   }
 
     .closebtn {
@@ -355,7 +356,7 @@ body {
         font-size: 30px;
         left: 0%;
         cursor: pointer;
-        background-color: #FBCB22;
+        background-color: transparent;
         color: black;
         padding: 4.2% 4.2%;
         border: none;
@@ -366,12 +367,12 @@ body {
         position:fixed;
         font-size: 20px;
         cursor: pointer;
-        background-color: #FBCB22;
+        background-color: transparent;
         color: black;
         padding: 4.2% 4.2%;
         border: none;
-        top:1%;
-        left:0%;
+        top:2%;
+        left:2%;
     }
 
     .openbtn:hover {
@@ -433,17 +434,19 @@ body {
     }
 
 
-  .bar-icon{
+    .bar-icon{
       position: fixed;
       height: 100%;
-      width: 100%;   
+      width: 100%;
+      top: 0%; 
   }
 
   .bar-icon img {
     position: fixed;
-    height: 10%;
-    width: 16%;
-    left: 42.5%;
+    height: 100px;
+    width: 100px;
+    left: 40%;
+    top:0.5%;
   }
   
 
@@ -460,12 +463,12 @@ body {
     position: fixed;
     top:0%;
     font-size: 30px;
-    left: 90%;
+    left: 80%;
   }
 
   .icon-login img{
-    width: 60%;
-    height: 60%;
+    width: 30%;
+    height: 30%;
   }
 
   .closebtn {
@@ -475,7 +478,7 @@ body {
       font-size: 30px;
       left: 0%;
       cursor: pointer;
-      background-color: #FBCB22;
+      background-color: transparent;
       color: black;
       padding: 5% 5%;
       border: none;
@@ -486,11 +489,11 @@ body {
         position:fixed;
         font-size: 20px;
         cursor: pointer;
-        background-color: #FBCB22;
+        background-color: transparent;
         color: black;
         padding: 5% 5%;
         border: none;
-        top:1%;
+        top:2%;
         left:0%;
     }
 

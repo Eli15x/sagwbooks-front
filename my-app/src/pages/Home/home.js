@@ -7,9 +7,9 @@ export default () => {
   
 return (
     <>
-      <Feed />
-      <Bar />   
+      <Feed />   
       <Writers />
+      <Bar />
     </>  
 );
 

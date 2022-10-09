@@ -1,35 +1,53 @@
 import './writers.css';
 import React , { useEffect, useState } from "react";
 import {getWriters} from '../../api/writer';
-import getIdade from '../../utils/utils';
+import {getIdade} from '../../utils/utils';
 
 const Writer = () => {
-
-const [infoWriters, setInfoWriters] = useState([])
+    
+const [randomWriters, setInfoRandomWriters] = useState([])
 
 const information = (birthdate, city) => {
-    var idade = "18" //getIdade(birthdate,Date.now())
-    return idade + " anos , "+ city
+    return getIdade(birthdate) + " anos , "+ city
 }
 
-const getRandomWriter = (writers) => {
-    var newWriters = {}
+const setRandomWriters = (writers) => {
+    var newWriters = []
+    var numbers = []
     
-    if (writers.length < 6){
+    if (writers.length <= 6){
         return writers
     }
 
-    for (var i = 0; i < 6; i ++){
-        newWriters = newWriters + writers[Math.floor(Math.random() * writers.length)];
+    for (var i = 0; i < 6; i++){
+        while(true){
+            var newNumber = Math.floor(Math.random() * writers.length)
+            if(!compareValueInArray(numbers,newNumber)){
+                    newWriters.push(writers[newNumber]);
+                    numbers.push(newNumber)
+                    break;
+            }
+        }
     }
-    return newWriters;
+    setInfoRandomWriters(newWriters)
 }
+
+const compareValueInArray = (array, value) => {
+    var result = false;
+    array.map((arrayValue) => {
+        if (arrayValue ===  value){
+            result = true
+        }
+    })
+    return result
+}
+
 
 useEffect(() => {
     async function fetchData() {
         await getWriters().then((data) => {
-            setInfoWriters(data)
-        })        
+            setRandomWriters(data)
+        })    
     }
       fetchData();
 }, [])
@@ -37,17 +55,24 @@ useEffect(() => {
 // fica com o infoWriters desatualizado. é isso mesmo
 return (
     <>
+    <div className="information-writters"> 
+    <div className="text-writters">Nossos Autores</div>
+    <div className="line-one"/>
+    <div className="line-two"/>
         <div className="cards">
-        {infoWriters.map((writer) => (
-		<div className="card-writer">-
+        {randomWriters.map((writer) => (
+		<div className="card-writer">
+            <div className="image-black"> </div>
+            <img className="imgwriter" src={require(`../../img/${writer.Image}`)} onError={(e: any) => e.target.src = '../../img/2.jpeg'} alt={writer.Name} />
+
             <div className="info-writter"> 
             <div className="name-writter"> {writer.Name} </div>
             <div className="information-writter"> {information(writer.BirthDate,writer.City)} </div>
             </div>
-			<img src={writer.Image} alt={writer.Name} />
 		</div>
 		))} 
         </div>
+    </div>
     </>
 );
 
