@@ -1,4 +1,7 @@
 import './writers.css';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";  
 import React , { useEffect, useState } from "react";
 import {getWriters} from '../../api/writer';
 import {getIdade} from '../../utils/utils';
@@ -42,6 +45,16 @@ const compareValueInArray = (array, value) => {
     return result
 }
 
+const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 10000,
+
+};
 
 useEffect(() => {
     async function fetchData() {
@@ -51,8 +64,8 @@ useEffect(() => {
     }
       fetchData();
 }, [])
-// ver oque ta rolando acredito que provavelmente ele carrega o return antes de ta com os dados no infoWriters entao ele nao coloca nada na tela que deveria porque
-// fica com o infoWriters desatualizado. é isso mesmo
+
+//QUANDO PEGAR O NOME FAZER UM FUNCAO PARA PEGAR O SEGUNDO NOME SOMENTE, OU O MENOR SOBRENOME ENTRE OS QUE TIVEREM, CASO NAO TENHA COLOCAR SOMENTE A INICAL.
 return (
     <>
     <div className="information-writters"> 
@@ -60,17 +73,19 @@ return (
     <div className="line-one"/>
     <div className="line-two"/>
         <div className="cards">
+        <Slider {...settings}>
         {randomWriters.map((writer) => (
 		<div className="card-writer">
             <div className="image-black"> </div>
             <img className="imgwriter" src={require(`../../img/${writer.Image}`)} onError={(e: any) => e.target.src = '../../img/2.jpeg'} alt={writer.Name} />
 
             <div className="info-writter"> 
-            <div className="name-writter"> {writer.Name} </div>
+            <div className="name-writter"> {writer.Name} </div> 
             <div className="information-writter"> {information(writer.BirthDate,writer.City)} </div>
             </div>
 		</div>
 		))} 
+        </Slider>
         </div>
     </div>
     </>

@@ -34,9 +34,7 @@ return (
 	<div className="imgslider">
 		<Slider {...settings}>
 		{images.map((item) => (
-		<div classname="slider-images">
 			<img src={item.src} alt={item.alt} />
-		</div>
 		))}
 		</Slider>
 	</div>

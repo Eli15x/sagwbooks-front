@@ -1,124 +1,266 @@
-.line-one{
-    position: absolute;
-    top: 3%;
-    left: 20%;
-    background: black;
-    width: 20%;
-    height: 0.10%;
-}
-
-.line-two{
-    position: absolute;
-    top: 3%;
-    left: 60%;
-    background: black;
-    width: 20%;
-    height: 0.10%;
-}
-
 .information-writters{
-    position: absolute;
-    top:92%;
+    position: relative;
+    display: block;
+    background:transparent;
     width:100%;
-    height: 100%;
+    height: 40%;
+    left:0%;
     color: black;
     font-size: 35px;
+}
 
+.text-writters{
+    position: absolute;
+    background: white;
+    border-radius: 40px;
+    top:2%; 
+    left:44%; 
 }
 
 .cards{
     position:relative;
-    width: 1650px;
-    height:1000px;
-    padding-top: 2%;
-    left:0%;
-    align-items: center;
-    
+    padding-top: 5%;
+    padding-left: 1%;
+    padding-bottom: 3%;
+    padding-right: 2%;
 
 }
 
 .imgwriter{
     height: 100%;
     width:100%;
+     display: inline-block;
 
 }
 
-.image-black{
-    filter:alpha(opacity=50); opacity:0.5;
-    background-color: black;
-    position:absolute;
-    top:75%;
-    height: 25%;
-    width: 100%;
-}
 .card-writer{
+    display: inline-block;
     position:relative;
-    width: 20%;
-    height: 40%;
-    display:inline-block;
-    margin: 1%;
+    padding-left: 20%;
+
+}
+
+.card-writer img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+
 }
 
 .info-writter{
+    display: inline-block;
+    background-color:transparent;
+    text-align: left;
     position:absolute;
-    top: 75%;
-    width: 100%;
-    height:25%;
-    color:#ffff;
+    width:42%;
+    left:60%;
+    top:15%;
+    color:black;
 }
 
-.name-writter{
-    position:absolute;
-    font-size: 1.8vw;     
-    left:10%;
-    top:18%;
+.info-writter:hover {
+    color:black;
+}
 
+
+.name-writter{
+    font-size: 1.3vw;
 }
 
 .information-writter {
-    position:absolute;
-    font-size: 1.25vw;    
-    left:10%;
-    top:55%;
+    font-size: 1.0vw;    
 }
 
-@media only screen and (min-width: 1400px) and (max-width: 1600px) {
-
-    .line-one{
-        position: absolute;
-        top: 3%;
-        left: 15%;
-        background: black;
-        width: 20%;
-        height: 0.10%;
-    }
-    
-    .line-two{
-        position: absolute;
-        top: 3%;
-        left: 65%;
-        background: black;
-        width: 20%;
-        height: 0.10%;
-    }
-    
-    .information-writters{
-        position: absolute;
-        top:85%;
-        width:100%;
+@media only screen and (min-width: 1500px) and (max-width: 1600px) {
+    .imgwriter{
         height: 100%;
-        color: black;
-        font-size: 35px;
+        width:100%;
     
     }
     
-    .cards{
-        position:relative;
-        width: 1450px;
-        height:1000px;
-        padding-top: 2%;
-        left:0%;
-        align-items: center;
+    .card-writer img{
+        border-radius: 50%;
+        width: 180px;
+        height: 180px;
+    
+    }
+    
+    .info-writter{
+        display: inline-block;
+        background-color:transparent;
+        text-align: left;
+        position:absolute;
+        width:42%;
+        left:48%;
+        top:15%;
+        color:black;
+    }
+    
+    .name-writter{
+        font-size: 1.5vw;
+    }
+    
+    .information-writter {
+        font-size: 1.2vw;    
+    }
+    
+}
+
+@media only screen and (min-width: 1350px) and (max-width: 1500px) {
+    .imgwriter{
+        height: 100%;
+        width:100%;
+    
+    }
+    
+    .card-writer img{
+        border-radius: 50%;
+        width: 180px;
+        height: 180px;
+    
+    }
+    
+    .info-writter{
+        display: inline-block;
+        background-color:transparent;
+        text-align: left;
+        position:absolute;
+        width:42%;
+        left:65%;
+        top:15%;
+        color:black;
+    }
+    
+    .name-writter{
+        font-size: 1.5vw;
+    }
+    
+    .information-writter {
+        font-size: 1.2vw;    
+    }
+    
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1350px) {
+    .imgwriter{
+        height: 100%;
+        width:100%;
+    
+    }
+    
+    .card-writer img{
+        border-radius: 50%;
+        width: 180px;
+        height: 180px;
+    
+    }
+    
+    .info-writter{
+        display: inline-block;
+        background-color:transparent;
+        text-align: left;
+        position:absolute;
+        width:42%;
+        left:70%;
+        top:15%;
+        color:black;
+    }
+    
+    .name-writter{
+        font-size: 1.7vw;
+    }
+    
+    .information-writter {
+        font-size: 1.5vw;    
+    }
+    
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+    .text-writters{
+        position: absolute;
+        background: white;
+        border-radius: 40px;
+        top:2%; 
+        left:42%; 
+    }
+
+    .imgwriter{
+        height: 100%;
+        width:100%;
+    
+    }
+    
+    .card-writer img{
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+    
+    }
+    
+    .info-writter{
+        display: inline-block;
+        background-color:transparent;
+        text-align: left;
+        position:absolute;
+        width:42%;
+        left:67%;
+        top:15%;
+        color:black;
+    }
+    
+    .name-writter{
+        font-size: 1.8vw;
+    }
+    
+    .information-writter {
+        font-size: 1.5vw;    
+    }
+    
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1000px) {
+    .imgwriter{
+        height: 100%;
+        width:100%;
+    
+    }
+    
+    .card-writer img{
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+    
+    }
+    
+    .info-writter{
+        display: inline-block;
+        background-color:transparent;
+        text-align: left;
+        position:absolute;
+        width:42%;
+        left:75%;
+        top:15%;
+        color:black;
+    }
+    
+    .name-writter{
+        font-size: 1.8vw;
+    }
+    
+    .information-writter {
+        font-size: 1.5vw;    
+    }
+    
+}
+
+@media only screen and (min-width: 630px) and (max-width: 900px) {
+    .text-writters{
+        position: absolute;
+        background: white;
+        border-radius: 40px;
+        top:2%; 
+        left:40%; 
     }
     
     .imgwriter{
@@ -127,168 +269,150 @@
     
     }
     
-    .image-black{
-        filter:alpha(opacity=50); opacity:0.5;
-        background-color: black;
-        position:absolute;
-        top:75%;
-        height: 25%;
-        width: 100%;
-    }
-    .card-writer{
-        position:relative;
-        width: 30%;
-        height: 45%;
-        display:inline-block;
-        margin: 1%;
-    }
-    
-    .info-writter{
-        position:absolute;
-        top: 75%;
-        width: 100%;
-        height:25%;
-        color:#ffff;
-    }
-    
-    .name-writter{
-        position:absolute;
-        font-size: 2.5vw;     
-        left:10%;
-        top:15%;
-    
-    }
-    
-    .information-writter {
-        position:absolute;
-        font-size: 2vw;    
-        left:10%;
-        top:55%;
-    }
-}
-
-@media only screen and (min-width: 1200px) and (max-width: 1400px) {
-
-    .line-one{
-        position: absolute;
-        top: 3%;
-        left: 15%;
-        background: black;
-        width: 20%;
-        height: 0.10%;
-    }
-    
-    .line-two{
-        position: absolute;
-        top: 3%;
-        left: 65%;
-        background: black;
-        width: 20%;
-        height: 0.10%;
-    }
-    
-    .information-writters{
-        position: absolute;
-        top:78%;
-        width:100%;
-        height: 100%;
-        color: black;
-        font-size: 35px;
+    .card-writer img{
+        border-radius: 50%;
+        width: 180px;
+        height: 180px;
     
     }
     
     .cards{
         position:relative;
-        width: 100%; 
-        height: 100%;
-        padding-top: 2%;
-        left:0%;
-        align-items: center;
+        padding-top: 10%;
+        padding-left: 0%;
+        padding-bottom: 3%;
+        padding-right: 2%;
+    
+    }
+    .info-writter{
+        display: none;
+        background-color:transparent;
+        text-align: left;
+        position:absolute;
+        width:42%;
+        left:60%;
+        top:15%;
+        color:black;
     }
     
+    .name-writter{
+        font-size: 1.8vw;
+    }
+    
+    .information-writter {
+        font-size: 1.5vw;    
+    }
+    
+}
+
+@media only screen and (min-width: 0px) and (max-width: 630px) {
     .imgwriter{
         height: 100%;
         width:100%;
     
     }
     
-    .image-black{
-        filter:alpha(opacity=50); opacity:0.5;
-        background-color: black;
-        position:absolute;
-        top:75%;
-        height: 25%;
-        width: 100%;
-    }
-    .card-writer{
-        position:relative;
-        width: 400px;
-        height:400px;
-        display:inline-block;
-        margin: 1%;
+    .card-writer img{
+        border-radius: 50%;
+        width: 130px;
+        height: 130px;
+    
     }
     
+    .text-writters{
+        position: absolute;
+        background: white;
+        border-radius: 40px;
+        top:2%; 
+        left:35%; 
+    }
+    
+    .cards{
+        position:relative;
+        padding-top: 10%;
+        padding-left: 0%;
+        padding-bottom: 3%;
+        padding-right: 2%;
+    
+    }
     .info-writter{
+        display: none;
+        background-color:transparent;
+        text-align: left;
         position:absolute;
-        top: 75%;
-        width: 100%;
-        height:25%;
-        color:#ffff;
+        width:42%;
+        left:60%;
+        top:15%;
+        color:black;
     }
     
     .name-writter{
-        position:absolute;
-        font-size: 2.5vw;     
-        left:10%;
-        top:15%;
-    
+        font-size: 1.8vw;
     }
     
     .information-writter {
-        position:absolute;
-        font-size: 1.75vw;    
-        left:10%;
-        top:55%;
+        font-size: 1.5vw;    
     }
+    
 }
 
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+
+    .text-writters{
+        position: absolute;
+        background: white;
+        border-radius: 40px;
+        top:2%; 
+        left:28%; 
+    }
+}
+/*
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
 
     .line-one{
         position: absolute;
-        top: 3%;
-        left: 15%;
-        background: black;
+        top: 5%;
+        left: 20%;
+        background: white;
         width: 20%;
         height: 0.10%;
     }
     
     .line-two{
         position: absolute;
-        top: 3%;
-        left: 65%;
-        background: black;
+        top: 5%;
+        left: 60%;
+        background: white;
         width: 20%;
         height: 0.10%;
     }
     
     .information-writters{
         position: absolute;
-        top: 70%;
-        width:100%;
-        height: 100%;
+        background: #FBCB22;
+        top:75%;
+        width:92%;
+        height: 40%;
+        left:3%;
         color: black;
         font-size: 35px;
+        border-radius: 40px;
+    }
     
+    .text-writters{
+        position: absolute;
+        background: white;
+        border-radius: 40px;
+        top:2%; 
+        left:42%; 
     }
     
     .cards{
         position:relative;
-        width: 100%; 
-        height: 100%;
         padding-top: 2%;
+        padding: 2%;
         left:0%;
-        align-items: center;
+        top:10%;
     }
     
     .imgwriter{
@@ -297,84 +421,88 @@
     
     }
     
-    .image-black{
-        filter:alpha(opacity=50); opacity:0.5;
-        background-color: black;
-        position:absolute;
-        top:75%;
-        height: 25%;
-        width: 100%;
-    }
     .card-writer{
         position:relative;
-        width: 400px;
-        height:400px;
-        display:inline-block;
-        margin: 1%;
+    
+    }
+    
+    .card-writer img{
+        position:relative;
+        width: 300px;
+        height: 300px;
+    
     }
     
     .info-writter{
+        background-color: white;
         position:absolute;
-        top: 75%;
-        width: 100%;
+        top: 0%;
+        left:60%;
+        width: 30%;
         height:25%;
-        color:#ffff;
+        color:black;
     }
     
     .name-writter{
         position:absolute;
-        font-size: 2.6vw;     
-        left:10%;
-        top:18%;
+        font-size: 1.3vw;     
     
     }
     
     .information-writter {
         position:absolute;
-        font-size: 1.8vw;    
-        left:10%;
-        top:55%;
+        font-size: 1.0vw;    
+        top:35%;
     }
+    
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1000px) {
 
     .line-one{
         position: absolute;
-        top: 3%;
-        left: 15%;
-        background: black;
+        top: 5%;
+        left: 20%;
+        background: white;
         width: 20%;
         height: 0.10%;
     }
     
     .line-two{
         position: absolute;
-        top: 3%;
-        left: 65%;
-        background: black;
+        top: 5%;
+        left: 60%;
+        background: white;
         width: 20%;
         height: 0.10%;
     }
     
     .information-writters{
         position: absolute;
-        top:60%;
-        width:100%;
-        height: 100%;
+        background: #FBCB22;
+        top:75%;
+        width:92%;
+        height: 40%;
+        left:3%;
         color: black;
         font-size: 35px;
-    
+        border-radius: 40px;
     }
+    
+    .text-writters{
+        position: absolute;
+        background: white;
+        border-radius: 40px;
+        top:2%; 
+        left:42%; 
+    }
+    
     .cards{
         position:relative;
-        width: 100%; 
-        height: 100%;
         padding-top: 2%;
+        padding: 2%;
         left:0%;
-        align-items: center;
-        
-    
+        top:10%;
     }
     
     .imgwriter{
@@ -383,85 +511,88 @@
     
     }
     
-    .image-black{
-        filter:alpha(opacity=50); opacity:0.5;
-        background-color: black;
-        position:absolute;
-        top:75%;
-        height: 25%;
-        width: 100%;
-    }
     .card-writer{
         position:relative;
+    
+    }
+    
+    .card-writer img{
+        position:relative;
         width: 300px;
-        height:300px;
-        display:inline-block;
-        margin: 1%;
+        height: 300px;
+    
     }
     
     .info-writter{
+        background-color: white;
         position:absolute;
-        top: 75%;
-        width: 100%;
+        top: 0%;
+        left:60%;
+        width: 30%;
         height:25%;
-        color:#ffff;
+        color:black;
     }
     
     .name-writter{
         position:absolute;
-        font-size: 2.5vw;     
-        left:10%;
-        top:15%;
+        font-size: 1.3vw;     
     
     }
     
     .information-writter {
         position:absolute;
-        font-size: 2.0vw;    
-        left:10%;
-        top:55%;
+        font-size: 1.0vw;    
+        top:35%;
     }
+    
 }
 
 @media only screen and (min-width: 800px) and (max-width: 900px) {
 
     .line-one{
         position: absolute;
-        top: 2%;
-        left: 15%;
-        background: black;
+        top: 5%;
+        left: 20%;
+        background: white;
         width: 20%;
-        height: 0.05%;
+        height: 0.10%;
     }
     
     .line-two{
         position: absolute;
-        top: 2%;
-        left: 65%;
-        background: black;
+        top: 5%;
+        left: 60%;
+        background: white;
         width: 20%;
-        height: 0.05%;
+        height: 0.10%;
     }
     
     .information-writters{
         position: absolute;
-        top:55%;
-        width:100%;
-        height: 100%;
+        background: #FBCB22;
+        top:75%;
+        width:92%;
+        height: 40%;
+        left:3%;
         color: black;
         font-size: 35px;
+        border-radius: 40px;
+    }
     
+    .text-writters{
+        position: absolute;
+        background: white;
+        border-radius: 40px;
+        top:2%; 
+        left:42%; 
     }
     
     .cards{
         position:relative;
-        width: 100%; 
-        height: 100%;
         padding-top: 2%;
+        padding: 2%;
         left:0%;
-        align-items: center;
-        
-    
+        top:10%;
     }
     
     .imgwriter{
@@ -470,84 +601,88 @@
     
     }
     
-    .image-black{
-        filter:alpha(opacity=50); opacity:0.5;
-        background-color: black;
-        position:absolute;
-        top:75%;
-        height: 25%;
-        width: 100%;
-    }
     .card-writer{
         position:relative;
-        width: 250px;
-        height:250px;
-        display:inline-block;
-        margin: 1%;
+    
+    }
+    
+    .card-writer img{
+        position:relative;
+        width: 300px;
+        height: 300px;
+    
     }
     
     .info-writter{
+        background-color: white;
         position:absolute;
-        top: 75%;
-        width: 100%;
+        top: 0%;
+        left:60%;
+        width: 30%;
         height:25%;
-        color:#ffff;
+        color:black;
     }
     
     .name-writter{
         position:absolute;
-        font-size: 2.8vw;     
-        left:10%;
-        top:15%;
+        font-size: 1.3vw;     
     
     }
+    
     .information-writter {
         position:absolute;
-        font-size: 2.1vw;   
-        left:10%;
-        top:54%;
+        font-size: 1.0vw;    
+        top:35%;
     }
+    
 }
 
 @media only screen and (min-width: 700px) and (max-width: 800px) {
 
     .line-one{
         position: absolute;
-        top: 2%;
-        left: 10%;
-        background: black;
+        top: 5%;
+        left: 20%;
+        background: white;
         width: 20%;
-        height: 0.05%;
+        height: 0.10%;
     }
     
     .line-two{
         position: absolute;
-        top: 2%;
-        left: 72%;
-        background: black;
+        top: 5%;
+        left: 60%;
+        background: white;
         width: 20%;
-        height: 0.05%;
+        height: 0.10%;
     }
     
     .information-writters{
         position: absolute;
-        top:50%;
-        width:100%;
-        height: 100%;
+        background: #FBCB22;
+        top:75%;
+        width:92%;
+        height: 40%;
+        left:3%;
         color: black;
         font-size: 35px;
+        border-radius: 40px;
+    }
     
+    .text-writters{
+        position: absolute;
+        background: white;
+        border-radius: 40px;
+        top:2%; 
+        left:42%; 
     }
     
     .cards{
         position:relative;
-        width: 100%; 
-        height: 100%;
         padding-top: 2%;
+        padding: 2%;
         left:0%;
-        align-items: center;
-        
-    
+        top:10%;
     }
     
     .imgwriter{
@@ -556,86 +691,88 @@
     
     }
     
-    .image-black{
-        filter:alpha(opacity=50); opacity:0.5;
-        background-color: black;
-        position:absolute;
-        top:75%;
-        height: 25%;
-        width: 100%;
-    }
     .card-writer{
         position:relative;
-        width: 225px;
-        height:225px;
-        display:inline-block;
-        margin: 1%;
+    
+    }
+    
+    .card-writer img{
+        position:relative;
+        width: 300px;
+        height: 300px;
+    
     }
     
     .info-writter{
+        background-color: white;
         position:absolute;
-        top: 75%;
-        width: 100%;
+        top: 0%;
+        left:60%;
+        width: 30%;
         height:25%;
-        color:#ffff;
+        color:black;
     }
     
     .name-writter{
         position:absolute;
-        font-size: 2.8vw;     
-        left:10%;
-        top:13%;
+        font-size: 1.3vw;     
     
     }
     
     .information-writter {
         position:absolute;
-        font-size: 2vw;    
-        left:10%;
-        top:55%;
+        font-size: 1.0vw;    
+        top:35%;
     }
+    
 }
 
 @media only screen and (min-width: 600px) and (max-width: 700px) {
 
     .line-one{
         position: absolute;
-        top: 2%;
-        left: 10%;
-        background: black;
+        top: 5%;
+        left: 20%;
+        background: white;
         width: 20%;
-        height: 0.05%;
+        height: 0.10%;
     }
     
     .line-two{
         position: absolute;
-        top: 2%;
-        left: 72%;
-        background: black;
+        top: 5%;
+        left: 60%;
+        background: white;
         width: 20%;
-        height: 0.05%;
+        height: 0.10%;
     }
     
     .information-writters{
         position: absolute;
-        top:46%;
-        width:100%;
-        height: 100%;
+        background: #FBCB22;
+        top:75%;
+        width:92%;
+        height: 40%;
+        left:3%;
         color: black;
-        font-size: 4.5vw; 
-        background-color: transparent;
+        font-size: 35px;
+        border-radius: 40px;
+    }
     
+    .text-writters{
+        position: absolute;
+        background: white;
+        border-radius: 40px;
+        top:2%; 
+        left:42%; 
     }
     
     .cards{
         position:relative;
-        width: 100%; 
-        height: 100%;
         padding-top: 2%;
+        padding: 2%;
         left:0%;
-        align-items: center;
-        
-    
+        top:10%;
     }
     
     .imgwriter{
@@ -644,86 +781,88 @@
     
     }
     
-    .image-black{
-        filter:alpha(opacity=50); opacity:0.5;
-        background-color: black;
-        position:absolute;
-        top:75%;
-        height: 25%;
-        width: 100%;
-    }
     .card-writer{
         position:relative;
-        width: 200px;
-        height:200px;
-        display:inline-block;
-        margin: 1%;
+    
+    }
+    
+    .card-writer img{
+        position:relative;
+        width: 300px;
+        height: 300px;
+    
     }
     
     .info-writter{
+        background-color: white;
         position:absolute;
-        top: 75%;
-        width: 100%;
+        top: 0%;
+        left:60%;
+        width: 30%;
         height:25%;
-        color:#ffff;
+        color:black;
     }
     
     .name-writter{
         position:absolute;
-        font-size: 3.3vw;     
-        left:10%;
-        top:12%;
+        font-size: 1.3vw;     
     
     }
     
     .information-writter {
         position:absolute;
-        font-size: 2.3vw;   
-        left:10%;
-        top:55%;
+        font-size: 1.0vw;    
+        top:35%;
     }
+    
 }
 
 @media only screen and (min-width: 500px) and (max-width: 600px) {
 
     .line-one{
         position: absolute;
-        top: 2%;
-        left: 10%;
-        background: black;
+        top: 5%;
+        left: 20%;
+        background: white;
         width: 20%;
-        height: 0.05%;
+        height: 0.10%;
     }
     
     .line-two{
         position: absolute;
-        top: 2%;
-        left: 72%;
-        background: black;
+        top: 5%;
+        left: 60%;
+        background: white;
         width: 20%;
-        height: 0.05%;
+        height: 0.10%;
     }
     
     .information-writters{
         position: absolute;
-        top:41%;
-        width:100%;
-        height: 100%;
+        background: #FBCB22;
+        top:75%;
+        width:92%;
+        height: 40%;
+        left:3%;
         color: black;
-        font-size: 4.5vw; 
-        background-color: transparent;
+        font-size: 35px;
+        border-radius: 40px;
+    }
     
+    .text-writters{
+        position: absolute;
+        background: white;
+        border-radius: 40px;
+        top:2%; 
+        left:42%; 
     }
     
     .cards{
         position:relative;
-        width: 100%; 
-        height: 100%;
         padding-top: 2%;
+        padding: 2%;
         left:0%;
-        align-items: center;
-        
-    
+        top:10%;
     }
     
     .imgwriter{
@@ -732,88 +871,88 @@
     
     }
     
-    .image-black{
-        filter:alpha(opacity=50); opacity:0.5;
-        background-color: black;
-        position:absolute;
-        top:75%;
-        height: 25%;
-        width: 100%;
-        display:none;
-    }
     .card-writer{
         position:relative;
-        width: 150px;
-        height:150px;
-        display:inline-block;
-        margin: 1.5%;
+    
+    }
+    
+    .card-writer img{
+        position:relative;
+        width: 300px;
+        height: 300px;
+    
     }
     
     .info-writter{
+        background-color: white;
         position:absolute;
-        top: 75%;
-        width: 100%;
+        top: 0%;
+        left:60%;
+        width: 30%;
         height:25%;
-        color:#ffff;
-        display:none;
+        color:black;
     }
     
     .name-writter{
         position:absolute;
-        font-size: 3.8vw;     
-        left:10%;
-        top:15%;
+        font-size: 1.3vw;     
     
     }
     
     .information-writter {
         position:absolute;
-        font-size: 2.8vw;   
-        left:10%;
-        top:54%;
+        font-size: 1.0vw;    
+        top:35%;
     }
+    
 }
 
 @media only screen and (min-width: 400px) and (max-width: 500px) {
 
     .line-one{
         position: absolute;
-        top: 2%;
-        left: 10%;
-        background: black;
+        top: 5%;
+        left: 20%;
+        background: white;
         width: 20%;
-        height: 0.05%;
+        height: 0.10%;
     }
     
     .line-two{
         position: absolute;
-        top: 2%;
-        left: 72%;
-        background: black;
+        top: 5%;
+        left: 60%;
+        background: white;
         width: 20%;
-        height: 0.05%;
+        height: 0.10%;
     }
     
     .information-writters{
         position: absolute;
-        top:36%;
-        width:100%;
-        height: 100%;
+        background: #FBCB22;
+        top:75%;
+        width:92%;
+        height: 40%;
+        left:3%;
         color: black;
-        font-size: 4.5vw; 
-        background-color: transparent;
+        font-size: 35px;
+        border-radius: 40px;
+    }
     
+    .text-writters{
+        position: absolute;
+        background: white;
+        border-radius: 40px;
+        top:2%; 
+        left:42%; 
     }
     
     .cards{
         position:relative;
-        width: 100%; 
-        height: 100%;
         padding-top: 2%;
+        padding: 2%;
         left:0%;
-        align-items: center;
-        
-    
+        top:10%;
     }
     
     .imgwriter{
@@ -824,44 +963,37 @@
     
     .card-writer{
         position:relative;
-        width: 125px;
-        height:125px;
-        display:inline-block;
-        margin: 1.5%;
+    
     }
     
-    .image-black{
-        filter:alpha(opacity=50); opacity:0.5;
-        background-color: black;
-        position:absolute;
-        top:75%;
-        height: 25%;
-        width: 100%;
-        display:none;
+    .card-writer img{
+        position:relative;
+        width: 300px;
+        height: 300px;
+    
     }
-
+    
     .info-writter{
+        background-color: white;
         position:absolute;
-        top: 75%;
-        width: 100%;
+        top: 0%;
+        left:60%;
+        width: 30%;
         height:25%;
-        color:#ffff;
-        display:none;
+        color:black;
     }
     
     .name-writter{
         position:absolute;
-        font-size: 4vw;     
-        left:10%;
-        top:10%;
+        font-size: 1.3vw;     
     
     }
     
     .information-writter {
         position:absolute;
-        font-size: 3vw;   
-        left:10%;
-        top:50%;
+        font-size: 1.0vw;    
+        top:35%;
     }
-}
+    
+}*/
 
